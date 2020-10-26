@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from '../../styles/GlobalStyles';
 import { useDispatch } from 'react-redux';
+import * as exampleActions from '../../store/modules/example/actions';
 
 function Login() {
   const dispath = useDispatch();
@@ -8,9 +9,7 @@ function Login() {
   function handleClick(e) {
     e.preventDefault();
 
-    dispath({
-      type: 'CLICK_BUTTON',
-    });
+    dispath(exampleActions.clickButton());
   }
 
   return (
