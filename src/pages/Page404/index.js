@@ -1,12 +1,15 @@
 import React from 'react';
+
 import { Container } from '../../styles/GlobalStyles';
 
-function Login() {
+function Page404() {
+
   return (
     <Container>
-      <h1>Login</h1>
+      <h1>Page not found.</h1>
     </Container>
   );
+
 }
 
-export default Login;
+export default Page404;
